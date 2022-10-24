@@ -27,7 +27,7 @@ extension TransSyncFiles {
             try filesSync.sync(keys: Set(keys), paths: paths)
             print("\u{2705} \u{001B}[0;32mSUCCESS")
         case .help:
-            break
+            print(String.helpString)
         }
     }
 }

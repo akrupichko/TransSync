@@ -28,6 +28,7 @@
 		70CB57DB2905453A00D2B38B /* FileSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CB57DA2905453A00D2B38B /* FileSearch.swift */; };
 		70CB57DD2905499300D2B38B /* FileSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CB57DC2905499300D2B38B /* FileSearchTests.swift */; };
 		70CB57DF29054C3E00D2B38B /* TransSyncFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CB57DE29054C3E00D2B38B /* TransSyncFiles.swift */; };
+		70CB57E129065E3300D2B38B /* String+Help.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CB57E029065E3300D2B38B /* String+Help.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,7 @@
 		70CB57DA2905453A00D2B38B /* FileSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSearch.swift; sourceTree = "<group>"; };
 		70CB57DC2905499300D2B38B /* FileSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSearchTests.swift; sourceTree = "<group>"; };
 		70CB57DE29054C3E00D2B38B /* TransSyncFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransSyncFiles.swift; sourceTree = "<group>"; };
+		70CB57E029065E3300D2B38B /* String+Help.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Help.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 				70CB57DA2905453A00D2B38B /* FileSearch.swift */,
 				70CB57CC2902E5E300D2B38B /* FileCompose.swift */,
 				70CB57CE2903AD6C00D2B38B /* URL+Extensions.swift */,
+				70CB57E029065E3300D2B38B /* String+Help.swift */,
 			);
 			path = TransSyncFiles;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 				70CB57DB2905453A00D2B38B /* FileSearch.swift in Sources */,
 				70CB57B52902AC4500D2B38B /* Strings.swift in Sources */,
 				70CB57DF29054C3E00D2B38B /* TransSyncFiles.swift in Sources */,
+				70CB57E129065E3300D2B38B /* String+Help.swift in Sources */,
 				70CB57CD2902E5E300D2B38B /* FileCompose.swift in Sources */,
 				70CB57C52902E28200D2B38B /* FileSync.swift in Sources */,
 				70CB57B32902AC4500D2B38B /* Arguments.swift in Sources */,
