@@ -8,7 +8,44 @@
 
 /* Begin PBXBuildFile section */
 		70CB57902902AB4D00D2B38B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CB578F2902AB4D00D2B38B /* main.swift */; };
+		70CB57A32902ABF200D2B38B /* TransSyncFiles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70CB579B2902ABF200D2B38B /* TransSyncFiles.framework */; };
+		70CB57B32902AC4500D2B38B /* Arguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CB57B02902AC4500D2B38B /* Arguments.swift */; };
+		70CB57B42902AC4500D2B38B /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CB57B12902AC4500D2B38B /* Errors.swift */; };
+		70CB57B52902AC4500D2B38B /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CB57B22902AC4500D2B38B /* Strings.swift */; };
+		70CB57B82902AC7100D2B38B /* StringsTranslatesUpdaterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CB57B62902AC7100D2B38B /* StringsTranslatesUpdaterTests.swift */; };
+		70CB57B92902AC7100D2B38B /* ArgumentsParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CB57B72902AC7100D2B38B /* ArgumentsParserTests.swift */; };
+		70CB57BB2902AC9B00D2B38B /* TransSyncFiles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70CB579B2902ABF200D2B38B /* TransSyncFiles.framework */; };
+		70CB57BC2902AC9C00D2B38B /* TransSyncFiles.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 70CB579B2902ABF200D2B38B /* TransSyncFiles.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		70CB57C32902B26B00D2B38B /* FilesSyncTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CB57C22902B26B00D2B38B /* FilesSyncTests.swift */; };
+		70CB57C52902E28200D2B38B /* FileSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CB57C42902E28200D2B38B /* FileSync.swift */; };
+		70CB57CB2902E55400D2B38B /* FileComposeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CB57CA2902E55400D2B38B /* FileComposeTests.swift */; };
+		70CB57CD2902E5E300D2B38B /* FileCompose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CB57CC2902E5E300D2B38B /* FileCompose.swift */; };
+		70CB57CF2903AD6C00D2B38B /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CB57CE2903AD6C00D2B38B /* URL+Extensions.swift */; };
+		70CB57D1290524D100D2B38B /* Mode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CB57D0290524D100D2B38B /* Mode.swift */; };
+		70CB57D3290529A800D2B38B /* ModeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CB57D2290529A800D2B38B /* ModeTests.swift */; };
+		70CB57D7290533C100D2B38B /* FilesSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CB57D6290533C100D2B38B /* FilesSync.swift */; };
+		70CB57D92905373A00D2B38B /* FileSyncTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CB57D82905373A00D2B38B /* FileSyncTests.swift */; };
+		70CB57DB2905453A00D2B38B /* FileSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CB57DA2905453A00D2B38B /* FileSearch.swift */; };
+		70CB57DD2905499300D2B38B /* FileSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CB57DC2905499300D2B38B /* FileSearchTests.swift */; };
+		70CB57DF29054C3E00D2B38B /* TransSyncFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CB57DE29054C3E00D2B38B /* TransSyncFiles.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		70CB57A42902ABF200D2B38B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70CB57842902AB4D00D2B38B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70CB579A2902ABF200D2B38B;
+			remoteInfo = TransSyncFiles;
+		};
+		70CB57BD2902AC9C00D2B38B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70CB57842902AB4D00D2B38B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70CB579A2902ABF200D2B38B;
+			remoteInfo = TransSyncFiles;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		70CB578A2902AB4D00D2B38B /* CopyFiles */ = {
@@ -20,11 +57,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		70CB57BF2902AC9C00D2B38B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				70CB57BC2902AC9C00D2B38B /* TransSyncFiles.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		70CB578C2902AB4D00D2B38B /* TransSync */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TransSync; sourceTree = BUILT_PRODUCTS_DIR; };
 		70CB578F2902AB4D00D2B38B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		70CB579B2902ABF200D2B38B /* TransSyncFiles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TransSyncFiles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70CB57A22902ABF200D2B38B /* TransSyncFilesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransSyncFilesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		70CB57B02902AC4500D2B38B /* Arguments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arguments.swift; sourceTree = "<group>"; };
+		70CB57B12902AC4500D2B38B /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		70CB57B22902AC4500D2B38B /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		70CB57B62902AC7100D2B38B /* StringsTranslatesUpdaterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringsTranslatesUpdaterTests.swift; sourceTree = "<group>"; };
+		70CB57B72902AC7100D2B38B /* ArgumentsParserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArgumentsParserTests.swift; sourceTree = "<group>"; };
+		70CB57C22902B26B00D2B38B /* FilesSyncTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesSyncTests.swift; sourceTree = "<group>"; };
+		70CB57C42902E28200D2B38B /* FileSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSync.swift; sourceTree = "<group>"; };
+		70CB57CA2902E55400D2B38B /* FileComposeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileComposeTests.swift; sourceTree = "<group>"; };
+		70CB57CC2902E5E300D2B38B /* FileCompose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileCompose.swift; sourceTree = "<group>"; };
+		70CB57CE2903AD6C00D2B38B /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
+		70CB57D0290524D100D2B38B /* Mode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mode.swift; sourceTree = "<group>"; };
+		70CB57D2290529A800D2B38B /* ModeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeTests.swift; sourceTree = "<group>"; };
+		70CB57D6290533C100D2B38B /* FilesSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesSync.swift; sourceTree = "<group>"; };
+		70CB57D82905373A00D2B38B /* FileSyncTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSyncTests.swift; sourceTree = "<group>"; };
+		70CB57DA2905453A00D2B38B /* FileSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSearch.swift; sourceTree = "<group>"; };
+		70CB57DC2905499300D2B38B /* FileSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSearchTests.swift; sourceTree = "<group>"; };
+		70CB57DE29054C3E00D2B38B /* TransSyncFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransSyncFiles.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +99,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70CB57BB2902AC9B00D2B38B /* TransSyncFiles.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70CB57982902ABF200D2B38B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70CB579F2902ABF200D2B38B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70CB57A32902ABF200D2B38B /* TransSyncFiles.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,7 +125,10 @@
 			isa = PBXGroup;
 			children = (
 				70CB578E2902AB4D00D2B38B /* TransSync */,
+				70CB579C2902ABF200D2B38B /* TransSyncFiles */,
+				70CB57A62902ABF200D2B38B /* TransSyncFilesTests */,
 				70CB578D2902AB4D00D2B38B /* Products */,
+				70CB57BA2902AC9B00D2B38B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -50,6 +136,8 @@
 			isa = PBXGroup;
 			children = (
 				70CB578C2902AB4D00D2B38B /* TransSync */,
+				70CB579B2902ABF200D2B38B /* TransSyncFiles.framework */,
+				70CB57A22902ABF200D2B38B /* TransSyncFilesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,7 +150,55 @@
 			path = TransSync;
 			sourceTree = "<group>";
 		};
+		70CB579C2902ABF200D2B38B /* TransSyncFiles */ = {
+			isa = PBXGroup;
+			children = (
+				70CB57DE29054C3E00D2B38B /* TransSyncFiles.swift */,
+				70CB57D0290524D100D2B38B /* Mode.swift */,
+				70CB57B02902AC4500D2B38B /* Arguments.swift */,
+				70CB57B12902AC4500D2B38B /* Errors.swift */,
+				70CB57B22902AC4500D2B38B /* Strings.swift */,
+				70CB57C42902E28200D2B38B /* FileSync.swift */,
+				70CB57D6290533C100D2B38B /* FilesSync.swift */,
+				70CB57DA2905453A00D2B38B /* FileSearch.swift */,
+				70CB57CC2902E5E300D2B38B /* FileCompose.swift */,
+				70CB57CE2903AD6C00D2B38B /* URL+Extensions.swift */,
+			);
+			path = TransSyncFiles;
+			sourceTree = "<group>";
+		};
+		70CB57A62902ABF200D2B38B /* TransSyncFilesTests */ = {
+			isa = PBXGroup;
+			children = (
+				70CB57D2290529A800D2B38B /* ModeTests.swift */,
+				70CB57B72902AC7100D2B38B /* ArgumentsParserTests.swift */,
+				70CB57B62902AC7100D2B38B /* StringsTranslatesUpdaterTests.swift */,
+				70CB57D82905373A00D2B38B /* FileSyncTests.swift */,
+				70CB57C22902B26B00D2B38B /* FilesSyncTests.swift */,
+				70CB57CA2902E55400D2B38B /* FileComposeTests.swift */,
+				70CB57DC2905499300D2B38B /* FileSearchTests.swift */,
+			);
+			path = TransSyncFilesTests;
+			sourceTree = "<group>";
+		};
+		70CB57BA2902AC9B00D2B38B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		70CB57962902ABF200D2B38B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		70CB578B2902AB4D00D2B38B /* TransSync */ = {
@@ -72,15 +208,53 @@
 				70CB57882902AB4D00D2B38B /* Sources */,
 				70CB57892902AB4D00D2B38B /* Frameworks */,
 				70CB578A2902AB4D00D2B38B /* CopyFiles */,
+				70CB57BF2902AC9C00D2B38B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				70CB57BE2902AC9C00D2B38B /* PBXTargetDependency */,
 			);
 			name = TransSync;
 			productName = TransSync;
 			productReference = 70CB578C2902AB4D00D2B38B /* TransSync */;
 			productType = "com.apple.product-type.tool";
+		};
+		70CB579A2902ABF200D2B38B /* TransSyncFiles */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70CB57AA2902ABF200D2B38B /* Build configuration list for PBXNativeTarget "TransSyncFiles" */;
+			buildPhases = (
+				70CB57962902ABF200D2B38B /* Headers */,
+				70CB57972902ABF200D2B38B /* Sources */,
+				70CB57982902ABF200D2B38B /* Frameworks */,
+				70CB57992902ABF200D2B38B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TransSyncFiles;
+			productName = TransSyncFiles;
+			productReference = 70CB579B2902ABF200D2B38B /* TransSyncFiles.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		70CB57A12902ABF200D2B38B /* TransSyncFilesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70CB57AD2902ABF200D2B38B /* Build configuration list for PBXNativeTarget "TransSyncFilesTests" */;
+			buildPhases = (
+				70CB579E2902ABF200D2B38B /* Sources */,
+				70CB579F2902ABF200D2B38B /* Frameworks */,
+				70CB57A02902ABF200D2B38B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70CB57A52902ABF200D2B38B /* PBXTargetDependency */,
+			);
+			name = TransSyncFilesTests;
+			productName = TransSyncFilesTests;
+			productReference = 70CB57A22902ABF200D2B38B /* TransSyncFilesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -94,6 +268,14 @@
 				TargetAttributes = {
 					70CB578B2902AB4D00D2B38B = {
 						CreatedOnToolsVersion = 13.4.1;
+					};
+					70CB579A2902ABF200D2B38B = {
+						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
+					};
+					70CB57A12902ABF200D2B38B = {
+						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 				};
 			};
@@ -111,9 +293,28 @@
 			projectRoot = "";
 			targets = (
 				70CB578B2902AB4D00D2B38B /* TransSync */,
+				70CB579A2902ABF200D2B38B /* TransSyncFiles */,
+				70CB57A12902ABF200D2B38B /* TransSyncFilesTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		70CB57992902ABF200D2B38B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70CB57A02902ABF200D2B38B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		70CB57882902AB4D00D2B38B /* Sources */ = {
@@ -124,7 +325,51 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		70CB57972902ABF200D2B38B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70CB57B42902AC4500D2B38B /* Errors.swift in Sources */,
+				70CB57CF2903AD6C00D2B38B /* URL+Extensions.swift in Sources */,
+				70CB57D7290533C100D2B38B /* FilesSync.swift in Sources */,
+				70CB57DB2905453A00D2B38B /* FileSearch.swift in Sources */,
+				70CB57B52902AC4500D2B38B /* Strings.swift in Sources */,
+				70CB57DF29054C3E00D2B38B /* TransSyncFiles.swift in Sources */,
+				70CB57CD2902E5E300D2B38B /* FileCompose.swift in Sources */,
+				70CB57C52902E28200D2B38B /* FileSync.swift in Sources */,
+				70CB57B32902AC4500D2B38B /* Arguments.swift in Sources */,
+				70CB57D1290524D100D2B38B /* Mode.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70CB579E2902ABF200D2B38B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70CB57D3290529A800D2B38B /* ModeTests.swift in Sources */,
+				70CB57DD2905499300D2B38B /* FileSearchTests.swift in Sources */,
+				70CB57B82902AC7100D2B38B /* StringsTranslatesUpdaterTests.swift in Sources */,
+				70CB57D92905373A00D2B38B /* FileSyncTests.swift in Sources */,
+				70CB57C32902B26B00D2B38B /* FilesSyncTests.swift in Sources */,
+				70CB57CB2902E55400D2B38B /* FileComposeTests.swift in Sources */,
+				70CB57B92902AC7100D2B38B /* ArgumentsParserTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		70CB57A52902ABF200D2B38B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70CB579A2902ABF200D2B38B /* TransSyncFiles */;
+			targetProxy = 70CB57A42902ABF200D2B38B /* PBXContainerItemProxy */;
+		};
+		70CB57BE2902AC9C00D2B38B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70CB579A2902ABF200D2B38B /* TransSyncFiles */;
+			targetProxy = 70CB57BD2902AC9C00D2B38B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		70CB57912902AB4D00D2B38B /* Debug */ = {
@@ -244,6 +489,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -253,7 +499,112 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		70CB57AB2902ABF200D2B38B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = a.krupichko.TransSyncFiles;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		70CB57AC2902ABF200D2B38B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = a.krupichko.TransSyncFiles;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		70CB57AE2902ABF200D2B38B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = a.krupichko.TransSyncFilesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		70CB57AF2902ABF200D2B38B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = a.krupichko.TransSyncFilesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -275,6 +626,24 @@
 			buildConfigurations = (
 				70CB57942902AB4D00D2B38B /* Debug */,
 				70CB57952902AB4D00D2B38B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70CB57AA2902ABF200D2B38B /* Build configuration list for PBXNativeTarget "TransSyncFiles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70CB57AB2902ABF200D2B38B /* Debug */,
+				70CB57AC2902ABF200D2B38B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70CB57AD2902ABF200D2B38B /* Build configuration list for PBXNativeTarget "TransSyncFilesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70CB57AE2902ABF200D2B38B /* Debug */,
+				70CB57AF2902ABF200D2B38B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
