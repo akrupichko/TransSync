@@ -67,4 +67,26 @@ class ModeTests: XCTestCase {
             XCTFail(error.localizedDescription)
         }
     }
+    
+    func testStartWithCopy_Success() throws {
+        let mode = try Mode(arguments: ["-c", "/update/dir", "-k", "q,s,w,l"])
+        XCTAssertEqual(
+            mode,
+            .copyFromMainLocaleToAll(
+                keys: ["q","s","w","l"],
+                .init(string: "/update/dir")!
+            )
+        )
+    }
+    
+    func testStartWithCopy_Fail_without_keys() throws {
+        do {
+            _ = try Mode(arguments: ["-c", "/update/dir"])
+            XCTFail("Wrong mode")
+        } catch TransSyncError.copyModeError {
+            return
+        } catch {
+            XCTFail(error.localizedDescription)
+        }
+    }
 }

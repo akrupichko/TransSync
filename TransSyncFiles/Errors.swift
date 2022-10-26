@@ -9,6 +9,7 @@ public enum TransSyncError: Error {
     case noTranslatesDirectory(String)
     case cantOpenFile(String)
     case cantCreateTranlateFilePath(String)
+    case copyModeError
 }
 
 extension TransSyncError: LocalizedError {
@@ -30,6 +31,8 @@ extension TransSyncError: LocalizedError {
             return "Cant open file \(url)"
         case let .cantCreateTranlateFilePath(url):
             return "Cant create tranlate file path with url: \(url)"
+        case .copyModeError:
+            return "For copy mode, needs to additionally use -k {key},{key}..."
         }
     }
 }

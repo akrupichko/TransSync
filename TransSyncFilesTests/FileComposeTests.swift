@@ -137,4 +137,40 @@ class FileComposeTests: XCTestCase {
         
         XCTAssertEqual(urlPairs, [])
     }
+    
+    func testComposeUrlsForCopy_SuccessPath() throws {
+        var isDirectoryIterator = [false, true, false, true, false].makeIterator()
+        let subdirs = [
+            [URL(string: "/Project1/Strings/en.lproj/Localizable.strings")!],
+            [URL(string: "/Project1/Strings/en.lproj/")!, URL(string: "/Project1/Strings/ru.lproj/")!],
+            [URL(string: "/Project1/Strings/en.lproj/Localizable.strings")!],
+            [URL(string: "/Project1/Strings/ru.lproj/Localizable.strings")!]
+        ]
+        var subdirsIterator = subdirs.makeIterator()
+        let fileCompose = FileCompose(
+            filtered: [],
+            fileExtension: fileExtension,
+            isDirectory: { _ in isDirectoryIterator.next()! },
+            contentsOfDirectory: { _ in subdirsIterator.next()! }
+        )
+
+        let urlPairs = try fileCompose.findPairsForCopy(
+            fromLang: "en.lproj",
+            pathForUpdate: pathForUpdate
+        )
+        
+        XCTAssertEqual(
+            urlPairs,
+            [
+                .init(
+                    forUpdate: URL(string: "/Project1/Strings/en.lproj/Localizable.strings")!,
+                    actualTranslate: URL(string: "/Project1/Strings/en.lproj/Localizable.strings")!
+                ),
+                .init(
+                    forUpdate: URL(string: "/Project1/Strings/ru.lproj/Localizable.strings")!,
+                    actualTranslate: URL(string: "/Project1/Strings/en.lproj/Localizable.strings")!
+                )
+            ]
+        )
+    }
 }

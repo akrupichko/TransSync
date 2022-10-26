@@ -28,6 +28,9 @@ extension TransSyncFiles {
             print("\u{2705} \u{001B}[0;32mSUCCESS")
         case .help:
             print(String.helpString)
+        case .copyFromMainLocaleToAll(let keys, let url):
+            try filesSync.copy(from: masterLangDirectory, keys: Set(keys), pathForUpdate: url)
+            print("\u{2705} \u{001B}[0;32mSUCCESS")
         }
     }
 }
@@ -55,6 +58,7 @@ extension TransSyncFiles {
             stringsExtension: stringsExtension,
             arguments: arguments,
             filesSync: FilesSync(
+                findPairsForCopy: fileCompose.findPairsForCopy,
                 findPairs: fileCompose.findPairs,
                 update: fileSync.update
             ),

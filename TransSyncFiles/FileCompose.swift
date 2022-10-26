@@ -27,7 +27,7 @@ public struct FileCompose {
         pathForUpdate: URL,
         pathOfActualTranslates: URL
     ) throws -> [URLPair] {
-        try findFilesWithTranslate(path: pathForUpdate)
+        try findFilesWithTranslate(path: pathForUpdate, filtered: filtered)
             .map {
                 .init(
                     forUpdate: $0,
@@ -39,7 +39,26 @@ public struct FileCompose {
             }
     }
     
-    private func findFilesWithTranslate(path: URL) throws -> [URL] {
+    public func findPairsForCopy(
+        fromLang: String,
+        pathForUpdate: URL
+    ) throws -> [URLPair] {
+        guard let masterLangDirecoty = try findFilesWithTranslate(
+            path: pathForUpdate.appendingPathComponent(fromLang),
+            filtered: []
+        ).first else {
+            throw TransSyncError.noMasterLocalizationFile(fromLang)
+        }
+        return try findFilesWithTranslate(path: pathForUpdate, filtered: filtered)
+            .map {
+                .init(
+                    forUpdate: $0,
+                    actualTranslate: masterLangDirecoty
+                )
+            }
+    }
+    
+    private func findFilesWithTranslate(path: URL, filtered: Set<String>) throws -> [URL] {
         guard !filtered.contains(path.lastPathComponent) else { return [] }
         
         var files = [URL]()
@@ -47,7 +66,7 @@ public struct FileCompose {
 
         try content.forEach { url in
             if isDirectory(url) {
-                files.append(contentsOf: try findFilesWithTranslate(path: url))
+                files.append(contentsOf: try findFilesWithTranslate(path: url, filtered: filtered))
             } else if url.lastPathComponent.components(separatedBy: ".").last == fileExtension {
                 files.append(url)
             }
