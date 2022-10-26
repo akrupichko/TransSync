@@ -31,6 +31,7 @@ Possible frguments:
 -u {path}           // Path for update
 -t {path}           // Path with the actual translates
 -k {key},{key},...  // Keys for update. You can use -k with keys, that exactly will updated.
+-c {path}           // Will copy key = value from the master file to the all languages. Must be used with the -k argument.
 -h                  // Help
 ```
 
