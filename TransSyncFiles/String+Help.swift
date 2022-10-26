@@ -16,9 +16,10 @@ Directory with the translates in the Xcode projects, looks like:
 In this example, you need the Strings direcotory.
 
 \u{1F4D6} Arguments:
--u {path} // Path for update
--t {path} // Path with the actual translates
--k {key},{key},... // Keys for update. You can use -k with keys, that exactly will updated.
+-u {path}           // Path for update
+-t {path}           // Path with the actual translates
+-k {key},{key},...  // Keys for update. You can use -k with keys, that exactly will updated.
+-c {path}           // Will copy key = value from the master file to the all languages. Must be used with the -k argument.
 
 \u{1F921} Exampes:
 
